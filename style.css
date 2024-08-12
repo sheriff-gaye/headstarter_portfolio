@@ -762,7 +762,7 @@ footer {
   }
 
   header {
-    height: 100vh;
+    /* height: 100vh; */
     padding: 0;
     top: 5rem;
   }
@@ -782,12 +782,12 @@ footer {
     margin: 0.5rem 0 1.2rem;
   }
 
-  .header_image {
-    /* position: relative; */
+  /* .header_image {
+    position: relative;
     top: -8rem;
-  }
+  } */
   .header_right{
-    margin-top: 4rem;
+    margin-top: 18rem;
   }
 
   .header_right-bg {
