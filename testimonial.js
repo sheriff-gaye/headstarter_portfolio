@@ -1,6 +1,6 @@
 const testimonials = [
     {
-        quote: "Working with Harper was an absolute pleasure. Her attention to detail and expertise in web development brought my vision to life. Highly recommend her services!",
+        quote: "Working withSheriffwas an absolute pleasure. Her attention to detail and expertise in web development brought my vision to life. Highly recommend her services!",
         image: './images/avatar2.jpg',
         name: 'John Anderson',
         job: 'Software Engineer'
