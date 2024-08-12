@@ -26,7 +26,8 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
   font-weight: 300;
   color: var(--color-dark);
   line-height: 1.7;
@@ -100,7 +101,7 @@ section {
 }
 
 .btn-primary {
-  background: var(--color-primary);
+  background: #EF6C33;
   color: var(--color-white);
 }
 
@@ -202,6 +203,10 @@ header {
   margin: 1.2rem 0 2rem;
 }
 
+.header_left h1 span{
+  color: var(--color-primary);
+}
+
 .header_right {
   position: relative;
   height: 100%;
@@ -228,13 +233,18 @@ header {
 
 .header_right-bg {
   width: 70rem;
-  height: 65rem;
+  height: 70rem;
   border-radius: 50%;
-  background: var(--color-primary);
+  /* background:  #EF6C33; */
   position: absolute;
   right: -30rem;
   bottom: -30rem;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3Cfilter id=%22a%22%3E%3CfeTurbulence result=%22TURBULENCE%22 baseFrequency=%22.049%22 seed=%221%22%2F%3E%3CfeDisplacementMap in=%22SourceGraphic%22 in2=%22TURBULENCE%22 scale=%2220%22%2F%3E%3C%2Ffilter%3E%3Cfilter id=%22b%22%3E%3CfeOffset dx=%2230%22 result=%22OFFSET-1%22%2F%3E%3C%2Ffilter%3E%3Cfilter id=%22d%22%3E%3CfeOffset dx=%2220%22 result=%22OFFSET-2%22%2F%3E%3C%2Ffilter%3E%3Cfilter id=%22e%22%3E%3CfeOffset dy=%2250%22 result=%22OFFSET-3%22%2F%3E%3C%2Ffilter%3E%3Cfilter id=%22f%22 x=%22-500%22 y=%22-500%22 width=%222000%22 height=%222000%22 filterUnits=%22userSpaceOnUse%22%3E%3CfeFlood flood-color=%22%23fff%22 result=%22neutral-gray%22%2F%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%222.5%22 numOctaves=%22100%22 stitchTiles=%22stitch%22 result=%22NOISE%22%2F%3E%3CfeColorMatrix in=%22NOISE%22 type=%22saturate%22 values=%220%22 result=%22DESATURATED_NOISE%22%2F%3E%3CfeComponentTransfer in=%22DESATURATED_NOISE%22 result=%22THE_NOISE%22%3E%3CfeFuncA type=%22table%22 tableValues=%220 0 0.5 0%22%2F%3E%3C%2FfeComponentTransfer%3E%3CfeBlend in=%22SourceGraphic%22 in2=%22THE_NOISE%22 mode=%22soft-light%22 result=%22NOISY_IMAGE%22%2F%3E%3C%2Ffilter%3E%3Cmask id=%22c%22%3E%3Cpath fill=%22%23fff%22 d=%22M0 0h1000v1000H0z%22%2F%3E%3Ccircle cx=%22225%22 cy=%22596%22 r=%227%22 filter=%22url(%23a)%22%2F%3E%3Ccircle cx=%22741%22 cy=%22631%22 r=%229%22 filter=%22url(%23a)%22%2F%3E%3Ccircle cx=%22579%22 cy=%22475%22 r=%227%22 filter=%22url(%23a)%22%2F%3E%3Ccircle cx=%22232%22 cy=%22234%22 r=%227%22 filter=%22url(%23a)%22%2F%3E%3Cg filter=%22url(%23b)%22 mask=%22url(%23c)%22%3E%3Cpath fill=%22none%22 stroke-width=%229%22 stroke=%22%23000%22 d=%22M843 700.5q-134.896 173.598-351 214%22 filter=%22url(%23a)%22%2F%3E%3C%2Fg%3E%3Cg filter=%22url(%23d)%22 mask=%22url(%23c)%22 transform=%22scale(.6)%22%3E%3Cpath fill=%22none%22 stroke-width=%226%22 stroke=%22%23000%22 d=%22M843 700.5q-116.676 203.482-351 214%22 filter=%22url(%23a)%22%2F%3E%3C%2Fg%3E%3Cg filter=%22url(%23e)%22%3E%3Cpath fill=%22none%22 stroke-width=%226%22 stroke=%22%23000%22 d=%22M141.5 714q-67.495-210.335 5-419%22 filter=%22url(%23a)%22%2F%3E%3C%2Fg%3E%3Cg filter=%22url(%23e)%22%3E%3Cpath fill=%22none%22 stroke-width=%226%22 stroke=%22%23000%22 d=%22M501 88.5q227.032 11.305 346 205%22 filter=%22url(%23a)%22%2F%3E%3C%2Fg%3E%3C%2Fmask%3E%3C%2Fdefs%3E%3Cg filter=%22url(%23f)%22 mask=%22url(%23c)%22%3E%3Cpath filter=%22url(%23a)%22 fill=%22%23EF6C33%22 d=%22M843 700.5Q731 901 492 914.5T141.5 714q-111.5-214 5-419T501 88.5q238-1.5 346 205t-4 407Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+
+  
 }
+
+
 
 .header_image {
   width: 82%;
@@ -631,12 +641,12 @@ footer {
 
   header {
     height: 100%;
-    padding: 14rem 0 0;
+    padding: 5rem 0 0;
   }
 
   .header_container {
-    /* grid-template-columns: 50% 50%; */
-    align-items: flex-end;
+    grid-template-columns: 50% 50%;
+    /* align-items: flex-end; */
     height: 100%;
   }
 
@@ -650,8 +660,8 @@ footer {
   }
 
   .header_right-bg {
-    width: 32rem;
-    height: 32rem;
+    width: 40rem;
+    height: 40rem;
     right: 23%;
     bottom: 20%;
     transform: translate(50%, 50%);
@@ -759,7 +769,8 @@ footer {
 
   .header_container {
     grid-template-columns: 1fr;
-    margin-top: 4.4rem;
+    gap: 5rem;
+    margin-top: 4.2rem;
   }
 
   .header_left {
@@ -772,14 +783,16 @@ footer {
   }
 
   .header_image {
-    position: relative;
-    top: -2rem;
+    /* position: relative; */
+    top: -8rem;
+  }
+  .header_right{
+    margin-top: 4rem;
   }
 
   .header_right-bg {
-    bottom: 36%;
-    width: 23.5rem;
-    height: 23.5rem;
+    width: 26rem;
+    height: 26rem;
     right: 50%;
     bottom: 50%;
     transform: translate(50%, 50%);
@@ -788,7 +801,7 @@ footer {
   .header_socials {
     position: absolute;
     z-index: 1;
-    bottom: 11rem;
+    bottom: 2rem;
   }
 
   .header_socials a {
